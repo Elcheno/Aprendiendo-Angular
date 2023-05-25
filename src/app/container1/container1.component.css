@@ -1,0 +1,22 @@
+.wrapper{
+  background-color: #aec6de;
+  margin-top: 1em;
+}
+
+.wrapper .title{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.5em;
+  column-gap: 4em;
+}
+
+.wrapper .container div{
+  width: 45%;
+  text-align: center;
+}
