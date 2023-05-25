@@ -1,14 +1,24 @@
 .wrapper{
-  background-color: #aec6de;
+  /*background-color: #aec6de;*/
+  background-color: black;
   margin-top: 1em;
 }
 
 .wrapper .title{
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .wrapper .container{
+  /*background-image: url("/assets/img/giphy.gif");*/
+  /*background-image: url("/assets/img/DO5.gif");*/
+  /*background-image: url("/assets/img/LLrD.gif");*/
+  background-image: url("/assets/img/Pxzt.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12em;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -16,7 +26,41 @@
   column-gap: 4em;
 }
 
-.wrapper .container div{
-  width: 45%;
+.wrapper .container .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
   text-align: center;
+  color: white;
+}
+
+.wrapper .container .info .divBtn{
+  height: 100px;
+}
+
+.wrapper .container .info div button {
+  transition: all 0.5s;
+  font-size: 17px;
+  padding: 1ch 2ch;
+  background-color: white;
+  color: #000;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0px hsl(0, 0%, 90%),
+  4px 4px 0px hsl(0, 0%, 80%),
+  6px 6px 0px hsl(0, 0%, 70%),
+  8px 8px 0px hsl(0, 0%, 60%),
+  10px 10px 0px hsl(0, 0%, 50%),
+  12px 12px 0px hsl(0, 0%, 40%),
+  14px 14px 0px hsl(0, 0%, 30%),
+  16px 16px 0px hsl(0, 0%, 20%),
+  18px 18px 0px hsl(0, 0%, 10%);
+}
+
+.wrapper .container .info div button:hover {
+  background-color: hsl(0, 0%, 50%);
+  color: #fff;
+  box-shadow: none;
 }
