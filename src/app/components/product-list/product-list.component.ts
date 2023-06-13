@@ -1,5 +1,5 @@
 import {Component, inject, OnInit} from '@angular/core';
-import {Product} from "../../model/product";
+import {IProduct} from "../../model/iProduct";
 import { HttpClient } from "@angular/common/http";
 import {ProductService} from "../../services/product.service";
 import {Observable} from "rxjs";
@@ -12,8 +12,8 @@ import {Observable} from "rxjs";
 })
 export class ProductListComponent implements OnInit{
   http = inject(HttpClient);
-  productList: Product[] = [];
-  aux!: Observable<Product[]>;
+  productList: IProduct[] = [];
+  aux!: Observable<IProduct[]>;
 
   constructor(private productService: ProductService) {
   }

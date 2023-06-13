@@ -5,8 +5,8 @@
 
   <div class="container">
     <div class="list">
-      <div *ngFor="let product of productList" class="product">
-        <p>{{product.title}}</p>
+      <div *ngFor="let p of productList">
+        <app-product [p]="p"></app-product>
       </div>
     </div>
   </div>
